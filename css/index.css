@@ -1,0 +1,141 @@
+:root {
+  color-scheme: light dark;
+}
+
+html, body, .container {
+  height: 100%;
+  font-family: sans-serif;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+
+.container {
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea {
+  margin: 0 20px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+}
+#edit {
+  padding-top: 30px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#original, #formatted {
+  border-radius: 120px;
+  border: none;
+  padding: 30px 60px;
+  color: #3b3b3b;
+  resize: none;
+  width: 42%;
+  background-color: #E1F5FE;
+  height: 320px;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+  -webkit-transition: 300ms linear;
+  -ms-transition: 300ms linear;
+  transition: 300ms linear;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+#formatted {
+  background-color: #E8F5E9;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+#text, #url {
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: 2px solid #D7CCC8;
+}
+
+#convert-btn, #copy-btn, #save, #welcome, #time {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #3b3b3b;
+  background-color: #EFEBE9;
+  border: solid 2px #EFEBE9;
+  color: #6D4C41;
+  width: 100%;
+  border-radius: 25px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#welcome{
+  padding: 10px 0;
+}
+
+#save {
+  width: 100px;
+}
+
+#convert-btn:hover, #save:hover, #welcome:hover {
+  border: solid 2px #D7CCC8;
+  cursor: pointer;
+  background-color: #D7CCC8;
+}
+
+#copy-btn, #time {
+  color: #D50000;
+  background-color: #FFCDD2;
+  border: solid 2px #FFCDD2;
+}
+
+#time {
+  font-size: 20px;
+}
+
+#copy-btn:hover, #time:hover {
+  cursor: pointer;
+  background-color: #EF9A9A;
+  border: solid 2px #EF9A9A;
+}
+
+/* #formatted:hover, #original:hover {
+  opacity: .9;
+  cursor: default;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04),
+  0 1px 2px rgba(0,0,0,0.04),
+  0 2px 4px rgba(0,0,0,0.04),
+  0 4px 8px rgba(0,0,0,0.04),
+  0 8px 16px rgba(0,0,0,0.04),
+  0 16px 32px rgba(0,0,0,0.04);
+} */
+
+/* #time {
+  width: 40%;
+  margin: 100px auto 0px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color:dimgrey;
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  #time {
+    background-color: red;
+  }
+} */

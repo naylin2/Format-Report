@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Formatting App</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <div id="edit">
+    <div>
+      <input type="text" id="text" spellcheck="false" placeholder="Enter your name:"></input>
+      <input type="text" id="url" spellcheck="false" placeholder="Enter your url:"></input>
+    </div>
+    <div>
+      <button id="save">Save</button>
+    </div>
+  </div>
+  <!-- <div id="time"></div> -->
+  <div class="container" id="container">
+    <textarea name="original" id="original" cols="50" rows="20" spellcheck="false" class="scroll"></textarea>
+    <div>
+      <button id="time"></button>
+      <button id="welcome"></button>
+      <button id="convert-btn">Convert</button>
+      <button id="copy-btn">Copy</button>
+    </div>
+    <textarea name="formatted" id="formatted" cols="50" rows="20" spellcheck="false" class="scroll"></textarea>
+  </div>
+</body>
+</html>
