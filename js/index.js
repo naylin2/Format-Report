@@ -127,11 +127,6 @@ $(document).ready(function(){
 
   });
   document.body.addEventListener("keyup", function(event) {
-    if (event.ctrlKey && event.key === 'c') {
-      $("#copy-btn").click();
-    }
-  });
-  document.body.addEventListener("keyup", function(event) {
     if (event.altKey && event.key === 'r') {
       urll = window.localStorage.getItem("url");
       window.open(urll,'_blank');
